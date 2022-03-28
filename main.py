@@ -10,10 +10,15 @@ while True:
 
 print("""Hello {}, welcome to this general knowledge quiz,
 you will go through a variety of 
-10-20 questions ranged from easy to difficult as you progress.""".format(name))
+10-20 questions ranged from easy to difficult as you progress. \n
+You will receive 1 point for every question you get right! 
+These points will be added up and will display your final score
+at the end of the quiz.
+This will determine your level of intelligent
+in your knowledge of General Knowledge""".format(name))
 print("   ")
 
-e = print #experiement code
+e = print #experiment code
 while True:
   try:
     age = input("Before you begin, please enter your age ")
