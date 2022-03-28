@@ -9,5 +9,21 @@ for key in questions.keys():
         print("You're Wrong!")
 
 
-Change user answer to lower case and take spaces out
     user_answer = input(key).lower().strip()
+
+
+
+e = print #experiement code
+while True:
+  try:
+    age = input("Before you begin, please enter your age ")
+    if age.isnumeric():
+      break
+  except ValueError as e:
+    print(e) #experiment
+    print("Invalid age")
+  except Exception as e: #experiment
+    print(e) #experiment
+    print("invalid age") #experiment
+else: #experiment
+  print(e) #experiment
