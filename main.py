@@ -32,16 +32,16 @@ print("Good luck and I hope you enjoy {}!".format(name))
 
 print (" ")
 
-questions = { 'Question 1: Machu Picchu is located in which country? \n a: Brazil \n b: Peru \n c: Costa Rica \n d: Philippines \n \n' : 'b' , 'Question 2: What is the biggest bone in the body? \n a: Femur \n b: Tibula \n c: Pectoralis Major  \n d: Ulna \n' :  'a' , 'Question 3: What is the largest muscle in the body? \n a: Gastrocnemius \n b: Latissimus Dorsi \n c: Brachioradialis \n d: Gluteus Maximus' : 'd' }
+questions = { 'Question 1: Machu Picchu is located in which country? \n a: Brazil \n b: Peru \n c: Costa Rica \n d: Philippines \n \n' : 'b' , 'Question 2: What is the biggest bone in the body? \n a: Femur \n b: Tibula \n c: Pectoralis Major  \n d: Ulna \n' :  'a' , 'Question 3: What is the largest muscle in the body? \n a: Gastrocnemius \n b: Latissimus Dorsi \n c: Brachioradialis \n d: Gluteus Maximus \n' : 'd' }
 
-
+score = 0 
 for key in questions.keys():
     user_answer=input(key)
     if questions.get(key)==user_answer:
-      
-      print("\n Correct!")
+        print(" \n Correct!")
+        score +=1
     else:
         print(" \n You're Wrong!")
 
-
-    user_answer = input(key).lower().strip()
+print("Congrats! you got " + str(score) + " out of 20 right!")
+      
