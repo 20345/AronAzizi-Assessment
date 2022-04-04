@@ -17,13 +17,12 @@ in your knowledge of General Knowledge""".format(name))
 print("   ")
 
 while True:
-  try:
-    age = input("Before you begin, please enter your age ")
-    if age.isnumeric():
-      break
-  except ValueError:
-    
-    print("Invalid age")
+      try:
+          age = input("Before you begin, please enter your age ")
+          age = int(age)
+          break
+      except ValueError:
+          print("Invalid age")
 
 
 
